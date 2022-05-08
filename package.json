@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.16"
+  },
+  "name": "project_management",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/app",
+    "server": "nodemon backend/app",
+    "client": "npm start --prefix front_end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
